@@ -30,7 +30,6 @@ function selecionarprato(botao) {
   console.log(2);
   console.log(botaoSelecionadoAnteriormente);
   botao.classList.add("selecionado");
-  valor+=botao;
   console.log(botao);
   verificaSelecao();
 }
@@ -57,5 +56,24 @@ function selecionarsobremesa(botao) {
   }
   botao.classList.add("selecionado");
   verificaSelecao();
+}
+
+function finalizar_pedido{
+  const nome=prompt('Qual o seu nome?');
+  const endereco=prompt('Endereço para entrega?');
+  const total=calculando();
+
+    const  mensagem =`seu pedido:
+    - Prato: ${tPrato}
+    - Bebida: ${tBebida}
+    - Sobremesa: ${tSobremesa}
+    Total: R$ ${total}
+    
+    Nome: ${nome}
+    Endereço: ${endereco}`;
+}
+
+function calculando(){
+
 }
 
