@@ -30,6 +30,8 @@ function selecionarprato(botao) {
   console.log(2);
   console.log(botaoSelecionadoAnteriormente);
   botao.classList.add("selecionado");
+  valor+=botao;
+  console.log(botao);
   verificaSelecao();
 }
 

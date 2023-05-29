@@ -1,5 +1,5 @@
 .cabecario {
-  width: 100%;
+  width: 414px;
   height: 92px;
   background-color: red;
 
@@ -8,6 +8,7 @@
   right: 0px;
   z-index: 2;
 }
+
 .cabecario h1 {
   position: absolute;
   width: 248px;
@@ -21,6 +22,7 @@
   font-size: 44px;
   line-height: 55px;
 }
+
 .cabecario h2 {
   position: absolute;
   width: 226px;
@@ -58,6 +60,7 @@ img {
   z-index: 1;
   margin: 18px 13px 8px 15px;
 }
+
 .prato, .bebida, .sobremesa{
   width: 172px;
   height: 216px;
@@ -65,36 +68,52 @@ img {
   box-shadow: 0px 0px 10px -4px rgba(0, 0, 0, 0.25);
   border-radius: 9px;
   margin: 0 8px;
+  padding: auto;
 }
-.botao-final {
-  position: fixed;
+
+.botao-final, .botao-espera{
   width: 364px;
   height: 61px;
   left: 25px;
   bottom: 16px;
   z-index: 3;
-  background: #32B72F;
   border-radius: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
+
+.botao-final{
+background: #32B72F;
+}
+
 .botao-espera{
-position: fixed;
-width: 364px;
-height: 61px;
-left: 25px;
-bottom: 16px;
-background: #CBCBCB;
-border-radius: 50px;
-z-index: 3;
+  background: #CBCBCB;
 }
+
+.preco{
+  height: 21px;
+  width: 132px;
+  left: -209px;
+  top: -101px;
+  border-radius: 0px;
+  color: #0000FF;  
+}
+
 .rodape {
-  width: 100%;
+  width: 414px;
   height: 92px;
   position: fixed;
   z-index: 2;
   left: 0px;
   bottom: 0px;
   background: #ffffff;
+  font-family: Righteous;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
+
 h1 {
   font-family: "Righteous";
   font-style: normal;
